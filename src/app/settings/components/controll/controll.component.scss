@@ -1,0 +1,98 @@
+.boxes{
+  @media (max-width:576px) {
+    padding: 15px !important;
+  }
+  flex-direction: column;
+  border-radius: 4px;
+  span{
+    color: #888;
+  }
+  .box2{
+    justify-content: space-between;
+    align-items: center;
+    .btn{
+      padding: 0%;
+      border: none !important;
+      @media (max-width:576px) {
+        &{
+          margin-top: 25px;
+        }
+        .switch{
+          width: 44px !important;
+          height: 24px !important;
+        }
+        .slider::before{
+          width: 18px !important;
+          height: 18px !important;
+          bottom: 3px !important;
+          right: 2px !important;
+        }
+        input:checked + .slider:before {
+          transform: translateX(-23px) !important;
+        }
+      }
+      .switch {
+        position: relative;
+        width: 78px;
+        height: 34px;
+        }
+
+        .switch input {
+        display: none;
+        }
+
+        .slider {
+        position: absolute;
+        cursor: pointer;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: #0075ff;
+        transition: .4s;
+        border-radius: 34px;
+        }
+
+        .slider::before {
+        content: "done";
+        font-family: 'Material Icons';
+        font-weight: normal;
+        font-size: 16px;
+        font-weight: 700;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        height: 26px;
+        width: 26px;
+        right: 4px;
+        bottom: 4px;
+        background-color: white;
+        transition: .4s;
+        border-radius: 50%;
+        color: #0075ff;
+        }
+
+        input:checked + .slider {
+        background-color: #eee;
+        }
+        input:checked + .slider:before {
+          content: "close";
+          color: #888;
+        transform: translateX(-45px);
+        }
+      }
+    }
+  .box3{
+    textarea{
+      min-width: 100%;
+      height: 150px;
+      border: 1px solid #ccc;
+      border-radius: 4px;
+      font-size: 12px;
+      resize: none;
+      word-spacing: 3px;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+  }
+}

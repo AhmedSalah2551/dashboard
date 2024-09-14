@@ -1,0 +1,45 @@
+.dash{
+  background-color: #f1f5f9;
+  @media (max-width:768px) {
+    .dashboard{
+      padding: 0% !important;
+    }
+  }
+  .dashboard{
+    .title{
+      position: relative;
+      width: fit-content;
+      &::after{
+        content: "";
+        width: 75%;
+        height: 4px;
+        background-color: #fff;
+        bottom: 0;
+        left: 0%;
+        position: absolute;
+        z-index: 0;
+      }
+      &::before{
+        content: "";
+        width: 25%;
+        height: 4px;
+        background-color: #000;
+        bottom: 0;
+        left: 0%;
+        position: absolute;
+        z-index: 2;
+      }
+    }
+    @media (max-width:1030px) {
+      .item{
+        width: 100% !important;
+      }
+      .row{
+        margin: 0% !important;
+      }
+    }
+    .item{
+      margin-bottom: 20px;
+    }
+  }
+}

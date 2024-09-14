@@ -1,0 +1,7 @@
+.side{
+  @media (max-width:768px) {
+    &{
+      width: 58px;
+    }
+  }
+}

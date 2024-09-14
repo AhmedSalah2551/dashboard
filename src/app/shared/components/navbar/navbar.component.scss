@@ -1,0 +1,59 @@
+.example-spacer {
+  flex: 1 1 auto;
+  background-color: transparent;
+}
+.mat-toolbar{
+  background-color: transparent;
+}
+@media (max-width:576px) {
+  .mat-toolbar-row, .mat-toolbar-single-row {
+    padding: 0px 8px !important;
+  }
+  .inp{
+    padding: 4px !important;
+    width: 45% !important;
+    input:focus{
+      padding-right: 0px !important;
+    }
+    input::placeholder{
+      font-size: 10px !important;
+    }
+  }
+  i{
+    font-size: 14px !important;
+  }
+}
+.inp{
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  padding: 5px;
+  input{
+    transition: all 0.3s ease-in-out;
+    border: none;
+    background-color: transparent;
+    outline: none;
+    &:focus{
+      transition: all 0.3s ease-in-out;
+      padding-right: 30px;
+    }
+    &::placeholder{
+      font-size: 12px;
+    }
+    &:focus::placeholder{
+      opacity: 0;
+      transition: all 0.2s ease-in-out;
+    }
+  }
+  i{
+    font-size: 16px;
+    color: #ccc;
+    margin:0px 5px;
+  }
+}
+
+  img{
+    width: 32px;
+    height: 32px;
+    max-width: 100%;
+    border-radius: 50%;
+  }

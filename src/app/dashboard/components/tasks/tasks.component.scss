@@ -1,0 +1,46 @@
+.welcome{
+  @media (max-width:576px) {
+    &{
+      padding: 5px !important;
+    }
+    .box1 h2{
+      margin: 5px 15px !important;
+    }
+  }
+  background-color: #fff;
+  border-radius: 4px;
+  .boxes{
+    flex-direction: column;
+    hr{
+      margin: 11px;
+      padding: 0%;
+    }
+    .box{
+      align-items: center;
+      position: relative;
+    .details{
+      align-items: center;
+      .info{
+        flex-direction: column;
+        h3{
+          padding: 0%;
+          margin: 5px 0px;
+          font-weight: 700;
+        }
+        span{
+          font-size: 14px;
+          color: #888;
+        }
+      }
+      }
+        .icon{
+          position: absolute;
+          right: 2px;
+          top: 50%;
+          transform: translateY(-50%);
+          font-size: 20px;
+        }
+    }
+  }
+}
+

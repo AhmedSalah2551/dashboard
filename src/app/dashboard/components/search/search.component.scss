@@ -1,0 +1,32 @@
+.welcome{
+  background-color: #fff;
+  border-radius: 4px;
+  .boxes{
+    flex-direction: column;
+    .box{
+        align-items: center;
+        position: relative;
+        padding: 9px 0px;
+        .items{
+          h3{
+            padding: 0%;
+            margin: 5px 0px;
+          }
+        }
+        .result{
+          span{
+            font-size: 12px;
+            background-color: #eee;
+            padding: 5px 10px;
+            margin-bottom: 20px;
+            border-radius: 5px;
+            position: absolute;
+            right: 1px;
+            top: 50%;
+            transform: translateY(-50%);
+          }
+      }
+    }
+  }
+}
+

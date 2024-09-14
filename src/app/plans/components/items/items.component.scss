@@ -1,0 +1,99 @@
+.boxes{
+    padding: 4px;
+    @media (max-width:768px){
+      .item{
+        width: calc(100% - 10px) !important;
+      }
+    }
+    @media (max-width:576px){
+      &{
+        padding: 1px !important;
+      }
+      .item{
+        width: 100% !important;
+      }
+    }
+    .item{
+      margin-bottom: 20px;
+      flex-direction: column;
+      width: calc(50% - 10px);
+      &.blue .title{
+        background-color: #0075ff;
+        outline-color: #0075ff;
+      }
+      &.blue .button button{
+        background-color: #0075ff;
+      }
+      &.orange .title{
+        background-color: #f59e0b;
+        outline-color: #f59e0b;
+      }
+      &.orange .button button{
+        background-color: #f59e0b;
+      }
+      .title{
+        background-color: #22c55e;
+        border: 4px solid #fff;
+        outline: 4px solid #22c55e;
+        flex-direction: column;
+        align-items: center;
+        h3{
+          font-size: 24px;
+          color: #fff;
+          font-weight: 700;
+        }
+        span{
+          color: #fff;
+          font-size: 40px;
+          width: fit-content;
+          position: relative;
+          i{
+            position: absolute;
+            left: -15px;
+            top: -13px;
+            font-size: 21px;
+            color: #fff;
+          }
+        }
+      }
+      .body{
+        flex-direction: column;
+        .box{
+          border-bottom: 1px #eee solid;
+          margin-bottom: 15px;
+          padding: 3px 0px;
+          align-items: center;
+          .advantages{
+            i{
+              margin-right: 5px;
+              font-size: 18px;
+            }
+            i.fa-check{
+              color: #22c55e;
+            }
+            i.fa-times{
+              color: #f44336;
+            }
+            p{
+              font-size: 14px;
+            }
+          }
+          .more{
+            i{
+              font-size: 16px;
+              color: #888;
+              cursor: pointer;
+            }
+          }
+        }
+      }
+      .button{
+        button{
+          padding: 3px 9px;
+          background-color: #22c55e;
+          border: none;
+          outline: none;
+        }
+      }
+    }
+}

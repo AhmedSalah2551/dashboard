@@ -1,0 +1,227 @@
+.boxes{
+  border-radius: 4px;
+  @media (max-width:768px) {
+    flex-direction: column;
+    .box1{
+      width: 100% !important;
+      justify-content: center;
+      .prog{
+        div{
+          width: 40% !important;
+        }
+      }
+    }
+    .box2{
+      width: 100%;
+      .item{
+        gap: 0 !important;
+        .item1{
+          text-align: center;
+          margin-bottom: 10px !important;
+        }
+        .item2, .item3{
+          flex-direction: column !important;
+          align-items: start !important;
+          p{
+            margin-bottom: 5px !important;
+          }
+        }
+        .item3{
+          label{
+            transform: translateX(0%) !important;
+          }
+        }
+      }
+    }
+  }
+  span{
+    color: #888;
+  }
+  .box1{
+    width: 25%;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .info, .rate{
+      justify-content: center;
+      flex-direction: column;
+      text-align: center;
+      gap: 5px;
+    }
+    .info{
+      h2{
+        margin: 0%;
+      }
+      img{
+        width: 120px;
+        height: 120px;
+        border-radius: 50%;
+        margin: 5px auto;
+      }
+    }
+    .level{
+      justify-content: center;
+      text-align: center;
+      flex-direction: column;
+      gap: 5px;
+      width: 100%;
+      span{
+        font-size: 16px;
+      }
+      .prog{
+        div{
+          margin: 10px auto;
+          height: 6px;
+          width: 60%;
+        }
+        span{
+          height: 6px;
+        }
+      }
+    }
+    .rate{
+      .stars{
+        i{
+          color: gold;
+          margin-right: 5px;
+          font-size: 15px;
+        }
+        span{
+          font-size: 10px;
+        }
+      }
+    }
+  }
+  .box2{
+    flex-direction: column;
+    position: relative;
+    width: 75%;
+    &::after{
+      position: absolute;
+      content: "";
+      left: 0%;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 1px;
+      height: 65%;
+      background-color: #eee;
+
+    }
+    .item{
+      flex-direction: column;
+      padding: 15px;
+      border-bottom: 1px solid #eee;
+      &:hover{
+        background-color: #f9f9f9;
+        transition: all 0.2s ease;
+      }
+      .name, .name2, .btn{
+        flex: 1;
+      }
+      .name2{
+        text-align: start;
+      }
+      .item1, .item2{
+        justify-content: space-between;
+        align-items: center;
+        p, h5{
+          font-size: 14px;
+          margin: 0%;
+        }
+        p{
+          margin-right: 5px;
+          color: #888;
+        }
+      }
+      .item1{
+        h3{
+          margin: 0%;
+          font-size: 16px;
+          color: #888;
+        }
+      }
+      .item3{
+        position: relative;
+        align-items: center;
+        .btn{
+          border: none;
+          outline: none;
+          padding: 0%;
+          @media (max-width:1030px) {
+            label{
+              transform: translateX(-150%) !important;
+            }
+          }
+          @media (max-width:992px) {
+            label{
+              transform: translateX(-100%) !important;
+            }
+          }
+          @media (max-width:768px) {
+            label{
+              transform: translateX(0%) !important;
+            }
+          }
+          label{
+            position: absolute;
+            left: 0%;
+            bottom: 0%;
+            transform: translateX(-210%);
+          }
+          .switch {
+            position: relative;
+            width: 70px;
+            height: 18px;
+            }
+
+            .switch input {
+            display: none;
+            }
+
+            .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #0075ff;
+            transition: .4s;
+            border-radius: 14px;
+            }
+
+            .slider:before {
+            content: "done";
+            font-family: 'Material Icons';
+            font-weight: normal;
+            font-size: 8px;
+            font-weight: 700;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            height: 14px;
+            width: 14px;
+            right: 2px;
+            bottom: 2px;
+            background-color: white;
+            transition: .4s;
+            border-radius: 50%;
+            color: #0075ff;
+            }
+
+            input:checked + .slider {
+            background-color: #e0dfdf;
+            border: none;
+            outline: none;
+            }
+            input:checked + .slider:before {
+              content: "close";
+              color: #888;
+              transform: translateX(-52px);
+            }
+          }
+      }
+    }
+    }
+}

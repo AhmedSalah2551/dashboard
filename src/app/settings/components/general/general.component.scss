@@ -1,0 +1,44 @@
+.boxes{
+  @media (max-width:576px) {
+    padding: 15px !important;
+  }
+  flex-direction: column;
+  border-radius: 4px;
+  span{
+    color: #888;
+  }
+  .box2{
+    flex-direction: column;
+    .inp{
+      flex-direction: column;
+      label{
+        color: #888;
+        font-size: 14px;
+      }
+      input{
+        border: 1px solid #ccc;
+        border-radius: 4px;
+        outline: none;
+        &::placeholder{
+          color: #888;
+        }
+      }
+      .email{
+        @media (max-width:576px) {
+          input{
+            width: 70% !important;
+          }
+        }
+        input{
+          background-color: #f0f4f8;
+          width: 92%;
+        }
+        a{
+          font-size: 17px;
+          color: #0075ff;
+          margin-left: 15px;
+        }
+      }
+    }
+  }
+}

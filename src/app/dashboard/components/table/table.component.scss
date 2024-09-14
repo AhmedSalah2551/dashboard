@@ -1,0 +1,52 @@
+.tab{
+  overflow-x: auto;
+}
+table{
+  min-width: 1000px;
+  border: 1px solid #eeee;
+  background-color: #fff;
+  border-radius: 4px;
+  thead{
+    td{
+      background-color: #eee;
+      font-weight: bold;
+      border: none;
+      padding: 15px !important;
+    }
+  }
+  tr{
+    &:hover{
+      background-color: #faf7f7;
+      transition: all 0.1s ease-in-out;
+    }
+    td{
+      padding:25px 20px;
+      border-left: 1px #eeee solid;
+      border-bottom: 1px #eeee solid;
+      border-spacing: none;
+      font-size: 14px;
+      span{
+        padding: 5px 10px;
+        color: #fff;
+        border-radius: 5px;
+      &.pending{
+        background-color: #f59e0b;
+      }
+      &.completed{
+        background-color: #22c55e;
+      }
+      &.prog{
+        background-color: #0075ff;
+      }
+      &.rejected{
+        background-color: #f44336;
+      }
+    }
+    img{
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+    }
+    }
+  }
+}

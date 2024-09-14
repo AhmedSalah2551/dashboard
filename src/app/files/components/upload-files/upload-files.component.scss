@@ -1,0 +1,103 @@
+.welcome{
+  background-color: #fff;
+  border-radius: 4px;
+  .title{
+    h2{
+      margin: 0%;
+      padding: 0%;
+    }
+  }
+  .boxes{
+    flex-direction: column;
+    .details{
+      align-items: center;
+      padding: 5px 10px;
+      align-items: center;
+      position: relative;
+      border: 1px solid #eee;
+      border-radius: 4px;
+      margin: 10px;
+      &.green .image .item{
+        background-color: #d2f4df	;
+        i{
+          color: #22c55e;
+        }
+      }
+      &.red .image .item{
+        background-color: #fdd9d6	;
+        i{
+          color: #f54336;
+        }
+      }
+      &.orange .image .item{
+        background-color: #fdecce	;
+        i{
+          color: #f59e0b;
+        }
+      }
+      .image{
+        margin: 0%;
+        padding: 0%;
+        margin-right: 10px;
+        .item{
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 40px;
+          height: 40px;
+          background-color: #cce3ff;
+          i{
+            color: #0075ff;
+            font-size: 20px;
+          }
+        }
+      }
+      .info{
+        flex-direction: column;
+        margin: 0%;
+        h3{
+          padding: 0%;
+          margin: 2px 0px;
+          font-size: 13px;
+        }
+        span{
+          font-size: 13px;
+          color: #888;
+        }
+      }
+      .time{
+        position: absolute;
+        right: 5px;
+        top: 50%;
+        transform: translateY(-50%);
+        font-size: 13px;
+        color: #888;
+      }
+    }
+    .button{
+      justify-content: center;
+      margin-bottom: 15px;
+      button{
+        font-size: 12;
+        padding: 7px 15px;
+        font-weight: normal;
+        &:hover i{
+          animation: move 0.7s 0.7s infinite linear ;
+        }
+        @keyframes move {
+          from{
+            transform: translateY(0);
+          }
+          to{
+            transform: translateY(-5px);
+          }
+        }
+      }
+      i{
+        font-size: 18px;
+        color: #fff;
+        margin-right: 10px;
+      }
+    }
+  }
+}
